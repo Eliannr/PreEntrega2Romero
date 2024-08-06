@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de Calorías</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Calculadora de Calorías</h1>
+    <form id="formulario-calorias">
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" required>
 
+        <label for="objetivo">Objetivo:</label>
+        <select id="objetivo">
+            <option value="deficit">Déficit</option>
+            <option value="volumen">Volumen</option>
+            <option value="recomposicion">Recomposición</option>
+        </select>
 
+        <button type="submit">Calcular</button>
+    </form>
 
+    <div id="resultado">
+        <h2>Calorías Diarias Recomendadas:</h2>
+        <p id="salida-calorias">0</p>
+    </div>
 
-    
     <script src="script.js"></script>
 </body>
 </html>
